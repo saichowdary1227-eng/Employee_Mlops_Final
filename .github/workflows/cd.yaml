@@ -19,7 +19,7 @@ jobs:
 
       - name: 3. Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r app/requirements.txt
           pip install pytest
           
       - name: 4. Set up Docker Buildx
