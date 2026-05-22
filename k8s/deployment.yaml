@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-salary-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-salary-app
+  template:
+    metadata:
+      labels:
+        app: employee-salary-app
+    spec:
+      containers:
+        - name: employee-salary-app
+          image: manisai06/employee22:latest
+          ports:
+            - containerPort: 5000
+
