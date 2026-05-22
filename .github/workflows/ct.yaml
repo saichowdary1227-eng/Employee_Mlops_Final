@@ -24,7 +24,7 @@ jobs:
         run: pip install -r app/requirements.txt
 
       - name: Run Retraining Script
-        run: python train.py
+        run: python app/train.py
 
       - name: Commit Updated Model
         run: |
